@@ -19,6 +19,7 @@ class MainWindow(QMainWindow):
             id_, name, roast_degree, ground_beans, taste_description, price, package_volume = row
             self.tableWidget.insertRow(self.tableWidget.rowCount())
             print(self.tableWidget.rowCount())
+            self.tableWidget.setColumnCount(len(row))
             self.tableWidget.setItem(self.tableWidget.rowCount() - 1, 0, QTableWidgetItem(str(row[0])))
             self.tableWidget.setItem(self.tableWidget.rowCount() - 1, 1, QTableWidgetItem(name))
             self.tableWidget.setItem(self.tableWidget.rowCount() - 1, 2, QTableWidgetItem(roast_degree))
