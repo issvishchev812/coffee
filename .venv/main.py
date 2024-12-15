@@ -3,7 +3,8 @@ from PyQt6.QtWidgets import QApplication, QMainWindow, QTableWidgetItem, QDialog
 from PyQt6.uic import loadUi
 import sqlite3
 
-### В задании конкретики я не нашел, поэтому сделал замену по имени
+### В задании конкретики я не нашел, поэтому сделал замену по имени.
+
 class AddEditCoffeeForm(QMainWindow):
     def __init__(self, code):
         super().__init__()
